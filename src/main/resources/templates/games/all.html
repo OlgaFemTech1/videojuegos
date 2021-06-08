@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+    <head th:replace="fragments/head"></head>
+    <header th:replace="fragments/header"></header>
+
+    <section class="container">
+    <h1 th:text="${title}"></h1>
+    <!--/*@thymesVar id="games" type="java"*/-->
+    <p th:text="${games}"></p>
+    </section>
+
+    <footer th:replace="fragments/footer"></footer>
+   </body>
+</html>

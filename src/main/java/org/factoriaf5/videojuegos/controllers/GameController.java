@@ -1,10 +1,13 @@
 package org.factoriaf5.videojuegos.controllers;
 
+import org.factoriaf5.videojuegos.models.Game;
 import org.factoriaf5.videojuegos.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.List;
 
 @Controller
 public class GameController {
@@ -18,9 +21,9 @@ public class GameController {
 
     @GetMapping("/games")
     String listGames(Model model) {
-        List<Games> games = gameService.allGames();
-        model.addAttribute("title", "Book list");
-        model.addAttribute("books", games);
-        return "books/all";
+        List<Game> games = gameService.allGame();
+        model.addAttribute("title", "Games list");
+        model.addAttribute("games", games);
+        return "games/all";
     }
 }
