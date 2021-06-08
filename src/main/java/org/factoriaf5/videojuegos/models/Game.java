@@ -10,8 +10,8 @@ import static javax.persistence.GenerationType.SEQUENCE;
 
 public class Game {
     @Entity
-    @Table(name = "books")
-    public class Book implements Serializable {
+    @Table(name = "games")
+    public class Game implements Serializable {
         @Id
         @GeneratedValue(strategy = SEQUENCE)
         private Long id;
@@ -37,7 +37,7 @@ public class Game {
 
         @Override
         public String toString() {
-            return "Book{" +
+            return "Game{" +
                     "id=" + id +
                     ", title='" + title + '\'' +
                     ", author='" + author + '\'' +
