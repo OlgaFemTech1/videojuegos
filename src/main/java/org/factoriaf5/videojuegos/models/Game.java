@@ -15,24 +15,17 @@ import static javax.persistence.GenerationType.SEQUENCE;
         @GeneratedValue(strategy = SEQUENCE)
         private Long id;
         private String title;
-        private String author;
+        private String platform;
+        private int year;
+        private double priceOriginal;
+        private String etiqueta;
+        private int discountPercent;
+        private double priceDiscount;
         private String category;
+        private String publisher;
+        private int pegi;
+        private String pegiContentDescriptiors;
 
-        public Long getId() {
-            return id;
-        }
-
-        public void setId(Long id) {
-            this.id = id;
-        }
-
-        public String getTitle() {
-            return title;
-        }
-
-        public void setTitle(String title) {
-            this.title = title;
-        }
 
         @Override
         public String toString() {
