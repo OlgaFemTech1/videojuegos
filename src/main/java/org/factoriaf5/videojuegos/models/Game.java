@@ -8,7 +8,6 @@ import java.io.Serializable;
 
 import static javax.persistence.GenerationType.SEQUENCE;
 
-public class Game {
     @Entity
     @Table(name = "games")
     public class Game implements Serializable {
@@ -61,4 +60,4 @@ public class Game {
             this.category = category;
         }
     }
-}
+
