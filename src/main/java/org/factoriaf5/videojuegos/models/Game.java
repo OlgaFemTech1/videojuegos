@@ -16,14 +16,14 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private Long id;
         private String title;
         private String platform;
-        private Int year;
-        private Double priceOriginal;
+        private int year;
+        private double priceOriginal;
         private String etiqueta;
-        private Int discountPercent;
-        private Double priceDiscount;
+        private String discountPercent;
+        private double priceDiscount;
         private String category;
         private String publisher;
-        private Int pegi;
+        private int pegi;
         private String pegiContentDescriptiors;
 
         public Long getId() {
@@ -50,59 +50,77 @@ import static javax.persistence.GenerationType.SEQUENCE;
             this.platform = platform;
         }
 
-        public Int getYear() {
+        public int getYear() {
             return year;
         }
 
-        public void setYear(Int year) { this.year = year; }
+        public void setYear(int year) {
+            this.year = year;
+        }
 
-        public Double getPriceOriginal() {
+        public double getPriceOriginal() {
             return priceOriginal;
         }
 
-        public void setPriceOriginal(Int priceOriginal) { this.priceOriginal = priceOriginal; }
+        public void setPriceOriginal(double priceOriginal) {
+            this.priceOriginal = priceOriginal;
+        }
 
         public String getEtiqueta() {
             return etiqueta;
         }
 
-        public void setEtiqueta(String etiqueta) { this.etiqueta = etiqueta; }
+        public void setEtiqueta(String etiqueta) {
+            this.etiqueta = etiqueta;
+        }
 
-        public Int getDiscountPercent() {
+        public String getDiscountPercent() {
             return discountPercent;
         }
 
-        public void setDiscountPercent(Int discountPercent) { this.discountPercent = discountPercent; }
+        public void setDiscountPercent(String discountPercent) {
+            this.discountPercent = discountPercent;
+        }
 
-        public Double getPriceDiscount() {
+        public double getPriceDiscount() {
             return priceDiscount;
         }
 
-        public void setPriceDiscount(Double priceDiscount) { this.priceDiscount = priceDiscount; }
+        public void setPriceDiscount(double priceDiscount) {
+            this.priceDiscount = priceDiscount;
+        }
 
         public String getCategory() {
             return category;
         }
 
-        public void setCategory (String category) { this.category = category;}
+        public void setCategory(String category) {
+            this.category = category;
+        }
 
         public String getPublisher() {
             return publisher;
         }
 
-        public void setPublisher (String publisher) { this.publisher = publisher;}
+        public void setPublisher(String publisher) {
+            this.publisher = publisher;
+        }
 
-        public Int getPegi() { return pegi; }
+        public int getPegi() {
+            return pegi;
+        }
 
-        public void setPegi (String pegi) { this.pegi = pegi;}
+        public void setPegi(int pegi) {
+            this.pegi = pegi;
+        }
 
-        public String getPegiContentDescriptiors() { return pegiContentDescriptiors; }
+        public String getPegiContentDescriptiors() {
+            return pegiContentDescriptiors;
+        }
 
-        public void setPegiContentDescriptiors(String pegiContentDescriptiors) { this.pegiContentDescriptiors = pegiContentDescriptiors;}
+        public void setPegiContentDescriptiors(String pegiContentDescriptiors) {
+            this.pegiContentDescriptiors = pegiContentDescriptiors;}
+        }
 
 
-
-
-
-    }
 

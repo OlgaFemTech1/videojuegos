@@ -15,7 +15,7 @@ import java.util.List;
             this.gameRepository = gameRepository;
         }
 
-        public List<Game> allGame() {
+        public List<Game> allGames() {
             List<Game> allGames = (List<Game>) gameRepository.findAll();
             return allGames;
         }
