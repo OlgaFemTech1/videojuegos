@@ -16,7 +16,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private Long id;
         private String title;
         private String platform;
-        private int year;
+        private int years;
         private double priceOriginal;
         private String etiqueta;
         private String discountPercent;
@@ -50,12 +50,12 @@ import static javax.persistence.GenerationType.SEQUENCE;
             this.platform = platform;
         }
 
-        public int getYear() {
-            return year;
+        public int getYears() {
+            return years;
         }
 
-        public void setYear(int year) {
-            this.year = year;
+        public void setYears(int years) {
+            this.years = years;
         }
 
         public double getPriceOriginal() {
