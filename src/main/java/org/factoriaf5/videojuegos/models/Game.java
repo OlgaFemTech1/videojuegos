@@ -16,14 +16,14 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private Long id;
         private String title;
         private String platform;
-        private int year;
-        private double priceOriginal;
+        private Int year;
+        private Double priceOriginal;
         private String etiqueta;
-        private int discountPercent;
-        private double priceDiscount;
+        private Int discountPercent;
+        private Double priceDiscount;
         private String category;
         private String publisher;
-        private int pegi;
+        private Int pegi;
         private String pegiContentDescriptiors;
 
 
