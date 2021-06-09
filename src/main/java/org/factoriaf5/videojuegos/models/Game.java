@@ -26,31 +26,83 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private Int pegi;
         private String pegiContentDescriptiors;
 
-
-        @Override
-        public String toString() {
-            return "Game{" +
-                    "id=" + id +
-                    ", title='" + title + '\'' +
-                    ", author='" + author + '\'' +
-                    ", category='" + category + '\'' +
-                    '}';
+        public Long getId() {
+            return id;
         }
 
-        public String getAuthor() {
-            return author;
+        public void setId(Long id) {
+            this.id = id;
         }
 
-        public void setAuthor(String author) {
-            this.author = author;
+        public String getTitle() {
+            return title;
         }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        public String getPlatform() {
+            return platform;
+        }
+
+        public void setPlatform(String platform) {
+            this.platform = platform;
+        }
+
+        public Int getYear() {
+            return year;
+        }
+
+        public void setYear(Int year) { this.year = year; }
+
+        public Double getPriceOriginal() {
+            return priceOriginal;
+        }
+
+        public void setPriceOriginal(Int priceOriginal) { this.priceOriginal = priceOriginal; }
+
+        public String getEtiqueta() {
+            return etiqueta;
+        }
+
+        public void setEtiqueta(String etiqueta) { this.etiqueta = etiqueta; }
+
+        public Int getDiscountPercent() {
+            return discountPercent;
+        }
+
+        public void setDiscountPercent(Int discountPercent) { this.discountPercent = discountPercent; }
+
+        public Double getPriceDiscount() {
+            return priceDiscount;
+        }
+
+        public void setPriceDiscount(Double priceDiscount) { this.priceDiscount = priceDiscount; }
 
         public String getCategory() {
             return category;
         }
 
-        public void setCategory(String category) {
-            this.category = category;
+        public void setCategory (String category) { this.category = category;}
+
+        public String getPublisher() {
+            return publisher;
         }
+
+        public void setPublisher (String publisher) { this.publisher = publisher;}
+
+        public Int getPegi() { return pegi; }
+
+        public void setPegi (String pegi) { this.pegi = pegi;}
+
+        public String getPegiContentDescriptiors() { return pegiContentDescriptiors; }
+
+        public void setPegiContentDescriptiors(String pegiContentDescriptiors) { this.pegiContentDescriptiors = pegiContentDescriptiors;}
+
+
+
+
+
     }
 
