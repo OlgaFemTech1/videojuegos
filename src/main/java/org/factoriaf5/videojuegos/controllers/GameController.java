@@ -12,7 +12,7 @@ import java.util.List;
 @Controller
 public class GameController {
 
-    private GameService gameService;
+    private final GameService gameService;
 
     @Autowired
     public GameController(GameService gameService) {
