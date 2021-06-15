@@ -7,15 +7,23 @@
 
     <section class="container">
       <h1 th:text="${title}"></h1>
+
         <div class="card-list">
-
-
-            <div class="game" th:each="game: ${games}"></div>
-          <div scope="row" th:text="${game.id}"></div>
+          <div class="game" th:each="game: ${games}"></div>
+          <div th:text="${game.id}"></div>
           <div th:text="${game.title}"></div>
           <div th:text="${game.platform}"></div>
           <div th:text="${game.years}"></div>
+           <td>
+             <a class="btn btn-sucess btn-sm" th:href="'/game/edit/'+${game.id}">Edit</a>
+           </td>
+           <td>
+             <a class="btn btn-danger btn-sm" th:href="'/game/delete/'+${game.id}">Delete</a>
+           </td>
+
         </div>
+
+
 
     </section>
 
