@@ -9,7 +9,8 @@
       <h1 th:text="${title}"></h1>
 
         <div class="card-list">
-          <div class="game" th:each="game: ${games}"></div>
+          <img th:src="@{/imag/recorteLEGACY GAMES.png}">
+          <div class="games" th:each="game: ${games}"></div>
           <div th:text="${game.id}"></div>
           <div th:text="${game.title}"></div>
           <div th:text="${game.platform}"></div>
