@@ -19,22 +19,24 @@
   display: block;
 }
 
-.buttonEdit {
+.buttonEditDelete {
   width: 12px;
   color: #f8f4f4;
   text-decoration: none;
   border-radius: 5px;
-  border: 1px solid #878686;
-  margin: 10px;
-  padding: 10px;
-  background-color: darkgreen;
+  border: 1px solid #e2e2e2;
+  padding: 3px;
+  background-color: #ffb728;
+  font-size: small;
 }
 
 .buttonDelete {
   width: 12px;
   border-radius: 5px;
-  border: 1px solid #878686;
-  margin: 10px;
-  padding: 10px;
-  background-color: darkred;
+  border: 1px solid #e2e2e2;
+  padding: 3px;
+  background-color: #ea6b00;
+  text-decoration: none;
+  font-size: small;
+  color:white;
 }
