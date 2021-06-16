@@ -18,7 +18,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private String platform;
         private int years;
         private int pegi;
-        private double priceOriginal;
+        private double cost;
 
 
         public Long getId() {
@@ -57,9 +57,10 @@ import static javax.persistence.GenerationType.SEQUENCE;
 
         public void setPegi(int pegi) { this.pegi = pegi;}
 
-        public double getPriceOriginal() { return priceOriginal; }
 
-        public void setPriceOriginal(double priceOriginal) { this.priceOriginal = priceOriginal; }
+        public double getCost() {return cost;}
+
+        public void setCost(double cost) {this.cost = cost;}
     }
 
 
