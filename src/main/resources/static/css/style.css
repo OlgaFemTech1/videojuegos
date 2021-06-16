@@ -1,18 +1,40 @@
-.card-list{
-    display:flex;
-    flex-wrap:wrap;
-    padding:20px;
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
 }
-.game{
-    border:1px solid black;
-    width:250px;
-    border-radius:20px;
-    margin:10px;
-    padding: 10px;
+
+.games {
+  border: 1px solid black;
+  width: 250px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
 
 }
-.game imag{
-    width: 80%;
-    margin: auto;
-    display: block;
+
+.games img {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+.buttonEdit {
+  width: 12px;
+  color: #f8f4f4;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #878686;
+  margin: 10px;
+  padding: 10px;
+  background-color: darkgreen;
+}
+
+.buttonDelete {
+  width: 12px;
+  border-radius: 5px;
+  border: 1px solid #878686;
+  margin: 10px;
+  padding: 10px;
+  background-color: darkred;
 }

@@ -9,18 +9,15 @@
     <h1 th:text="${title}"></h1>
 
     <div class="card-list">
-        <img th:src="@{/imag/recorteLEGACY GAMES.png}">
         <div class="games" th:each="game: ${games}">
+          <img th:src="@{/img/recorteLEGACY GAMES.png}">
             <div th:text="${game.id}"></div>
             <div th:text="${game.title}"></div>
             <div th:text="${game.platform}"></div>
             <div th:text="${game.years}"></div>
-            <td>
-                <a class="btn btn-sucess btn-sm" th:href="'/game/edit/'+${game.id}">Edit</a>
-            </td>
-            <td>
-                <a class="btn btn-danger btn-sm" th:href="'/game/delete/'+${game.id}">Delete</a>
-            </td>
+          <a class="buttonEdit" href="www.localhost:8080">edit</a>
+          <a class="buttonDelete" href="www.localhost:8080">delete</a>
+
         </div>
     </div>
 
