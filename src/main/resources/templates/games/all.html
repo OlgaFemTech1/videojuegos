@@ -15,6 +15,9 @@
             <th scope="col">years</th>
             <th scope="col">pegi</th>
             <th scope="col">cost</th>
+                <th scope="col">etiqueta</th>
+                <th scope="col">discountPercent</th>
+                <th scope="col">costDiscount</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
            </tr>
@@ -27,6 +30,9 @@
           <td th:text="${game.years}"></td>
           <td th:text="${game.pegi}"></td>
           <td th:text="${game.cost}"></td>
+            <td th:text="${game.etiqueta}"></td>
+            <td th:text="${game.discountPercent}"></td>
+            <td th:text="${game.costDiscount}"></td>
             <td>
                 <a class="btn btn-success btn-sm" th:href="'/games/edit/'+${game.id}">Edit</a>
             </td>

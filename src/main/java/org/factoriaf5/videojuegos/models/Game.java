@@ -19,39 +19,26 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private int years;
         private int pegi;
         private double cost;
+        private String etiqueta;
+        private int discountPercent;
+        private double costDiscount;
 
 
-        public Long getId() {
-            return id;
-        }
+        public Long getId() {return id;}
 
-        public void setId(Long id) {
-            this.id = id;
-        }
+        public void setId(Long id) {this.id = id;}
 
-        public String getTitle() {
-            return title;
-        }
+        public String getTitle() {return title;}
 
-        public void setTitle(String title) {
-            this.title = title;
-        }
+        public void setTitle(String title) {this.title = title;}
 
-        public String getPlatform() {
-            return platform;
-        }
+        public String getPlatform() {return platform;}
 
-        public void setPlatform(String platform) {
-            this.platform = platform;
-        }
+        public void setPlatform(String platform) {this.platform = platform;}
 
-        public int getYears() {
-            return years;
-        }
+        public int getYears() {return years;}
 
-        public void setYears(int years) {
-            this.years = years;
-        }
+        public void setYears(int years) {this.years = years;}
 
         public int getPegi() { return pegi;}
 
@@ -61,6 +48,18 @@ import static javax.persistence.GenerationType.SEQUENCE;
         public double getCost() {return cost;}
 
         public void setCost(double cost) {this.cost = cost;}
+
+        public String getEtiqueta() {return etiqueta;}
+
+        public void setEtiqueta(String etiqueta) {this.etiqueta = etiqueta;}
+
+        public int getDiscountPercent() {return discountPercent;}
+
+        public void setDiscountPercent(int discountPercent) {this.discountPercent = discountPercent;}
+
+        public double getCostDiscount() {return costDiscount;}
+
+        public void setCostDiscount(double costDiscount) {this.costDiscount = costDiscount;}
     }
 
 

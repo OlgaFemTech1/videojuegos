@@ -6,5 +6,8 @@ CREATE TABLE games (
                        platform VARCHAR(255) NOT NULL,
                        years NUMERIC NOT NULL,
                        pegi NUMERIC NOT NULL,
-                       cost DECIMAL(5,2)
+                       cost DECIMAL(5,2),
+                       etiqueta VARCHAR (255) NOT NULL,
+                       discountPercent NUMERIC NOT NULL,
+                       costDiscount DECIMAL (5,2)
 );
