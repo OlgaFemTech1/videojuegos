@@ -3,37 +3,33 @@
 <head th:replace="fragments/head"></head>
 <body>
 
-    <header th:replace="fragments/header"></header>
+<header th:replace="fragments/header"></header>
 
-    <section class="container">
-      <h1 th:text="${title}"></h1>
+<section class="container">
+    <h1 th:text="${title}"></h1>
 
-        <div class="card-list">
-          <img th:src="@{/imag/recorteLEGACY GAMES.png}">
-          <div class="games" th:each="game: ${games}"></div>
-          <div th:text="${game.id}"></div>
-          <div th:text="${game.title}"></div>
-          <div th:text="${game.platform}"></div>
-          <div th:text="${game.years}"></div>
-           <td>
-             <a class="btn btn-sucess btn-sm" th:href="'/game/edit/'+${game.id}">Edit</a>
-           </td>
-           <td>
-             <a class="btn btn-danger btn-sm" th:href="'/game/delete/'+${game.id}">Delete</a>
-           </td>
-
+    <div class="card-list">
+        <img th:src="@{/imag/recorteLEGACY GAMES.png}">
+        <div class="games" th:each="game: ${games}">
+            <div th:text="${game.id}"></div>
+            <div th:text="${game.title}"></div>
+            <div th:text="${game.platform}"></div>
+            <div th:text="${game.years}"></div>
+            <td>
+                <a class="btn btn-sucess btn-sm" th:href="'/game/edit/'+${game.id}">Edit</a>
+            </td>
+            <td>
+                <a class="btn btn-danger btn-sm" th:href="'/game/delete/'+${game.id}">Delete</a>
+            </td>
         </div>
+    </div>
 
 
-
-    </section>
-
+</section>
 
 
+<footer th:replace="fragments/footer"></footer>
 
 
-    <footer th:replace="fragments/footer"></footer>
-
-
-   </body>
+</body>
 </html>
