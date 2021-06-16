@@ -6,5 +6,5 @@ CREATE TABLE games (
                        platform VARCHAR(255) NOT NULL,
                        years NUMERIC NOT NULL,
                        pegi NUMERIC NOT NULL,
-                       priceOriginal decimal(5,2)
+                       priceOriginal DECIMAL(5,2)
 );
