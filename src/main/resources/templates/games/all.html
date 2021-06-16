@@ -13,6 +13,7 @@
             <th scope="col">title</th>
             <th scope="col">platform</th>
             <th scope="col">years</th>
+            <th scope="col">pegi</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
            </tr>
@@ -23,6 +24,7 @@
           <td th:text="${game.title}"></td>
           <td th:text="${game.platform}"></td>
           <td th:text="${game.years}"></td>
+          <td th:text="${game.pegi}"></td>
             <td>
                 <a class="btn btn-success btn-sm" th:href="'/games/edit/'+${game.id}">Edit</a>
             </td>

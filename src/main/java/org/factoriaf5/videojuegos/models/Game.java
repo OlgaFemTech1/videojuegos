@@ -17,6 +17,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private String title;
         private String platform;
         private int years;
+        private int pegi;
 
 
         public Long getId() {
@@ -51,6 +52,9 @@ import static javax.persistence.GenerationType.SEQUENCE;
             this.years = years;
         }
 
+        public int getPegi() { return pegi;}
+
+        public void setPegi(int pegi) { this.pegi = pegi;}
     }
 
 
