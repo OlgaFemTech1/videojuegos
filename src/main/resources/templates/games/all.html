@@ -11,9 +11,9 @@
     <div class="card-list">
         <div class="games" th:each="game: ${games}">
           <img th:src="@{/img/recorteLEGACY GAMES.png}">
-            <div th:text="${game.id}"></div>
-            <div th:text="${game.title}"></div>
-            <div th:text="${game.platform}"></div>
+            <div class="id" th:text="${game.id}"></div>
+            <div class="title" th:text="${game.title}"></div>
+            <div class="plataform" th:text="${game.platform}"></div>
             <br>
           <a class="buttonEditDelete" href="www.localhost:8080">Edit/Delete</a>
 

@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Syncopate&display=swap');
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  font-family: fantasy;
+  color: #363636;
 
 }
-
+.title{
+  font-family: 'Syncopate', sans-serif, Regular 400;
+  font-size: small ;
+}
 .games {
   border: 1px solid black;
   width: 250px;
