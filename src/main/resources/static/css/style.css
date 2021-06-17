@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Syncopate&display=swap');
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #363636;
+
+
+}
+.title{
+  font-family: 'Syncopate', sans-serif, Regular 400;
+  font-size: small ;
+}
+.games {
+  border: 1px solid black;
+  width: 250px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+
+}
+
+.games img {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+.buttonEditDelete {
+  width: 12px;
+  color: #f8f4f4;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  padding: 3px;
+  background-color: #ffb728;
+  font-size: small;
+}
+
+.buttonDelete {
+  width: 12px;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  padding: 3px;
+  background-color: #ea6b00;
+  text-decoration: none;
+  font-size: small;
+  color:white;
+}
+
+.nav-item dropdown{
+  list-style: none;
+}
