@@ -9,17 +9,23 @@
 
         <div class="card-list">
             <div class="games" th:each="game: ${games}">
-                <img th:src="@{/img/recorteLEGACY GAMES.png}">
+                <img th:src="@{/img/logo.png}">
                 <div class="id" th:text="${game.id}"></div>
                 <div class="title" th:text="${game.title}"></div>
-                <div class="plataform" th:text="${game.platform}"></div>
+                <div class="platform" th:text="${game.platform}"></div>
                 <div class="years" th:text="${game.years}"></div>
                 <div class="pegi" th:text="${game.pegi}"></div>
                 <div class="cost" th:text="${game.cost}"></div>
                 <div class="etiqueta" th:text="${game.etiqueta}"></div>
+                <div class="sales" th:text="${game.sales}"></div>
                 <br>
-                <a class="buttonEditDelete" href="#">Edit/Delete</a>
 
+                <td>
+                    <a class="buttonEdit" th:href="'/games/edit/'+${game.id}">Edit</a>
+                </td>
+                <td>
+                    <a class="buttonDelete" th:href="'/games/delete/'+${game.id}">Delete</a>
+                </td>
             </div>
         </div>
     </section>

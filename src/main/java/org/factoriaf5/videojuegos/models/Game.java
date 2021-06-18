@@ -20,7 +20,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private int pegi;
         private double cost;
         private String etiqueta;
-
+        private double sales;
 
         public Long getId() {
             return id;
@@ -77,6 +77,15 @@ import static javax.persistence.GenerationType.SEQUENCE;
 
         public void setEtiqueta(String etiqueta) {
             this.etiqueta = etiqueta;
+        }
+
+
+        public double getSales() {
+            return sales;
+        }
+
+        public void setSales(double sales) {
+            this.sales = sales;
         }
     }
 

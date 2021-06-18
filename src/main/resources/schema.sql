@@ -7,6 +7,7 @@ CREATE TABLE games (
                        years NUMERIC NOT NULL,
                        pegi NUMERIC NOT NULL,
                        cost DECIMAL(5,2),
-                       etiqueta VARCHAR(255) NOT NULL
+                       etiqueta VARCHAR(255) NOT NULL,
+                       sales NUMERIC(5,2)
 
 );
