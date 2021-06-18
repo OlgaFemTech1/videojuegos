@@ -87,7 +87,24 @@ import static javax.persistence.GenerationType.SEQUENCE;
         public void setSales(double sales) {
             this.sales = sales;
         }
+
+        @Override
+        public String toString() {
+            return "Game{" + "id=" + id +
+                    ", title='" + title + '\'' +
+                    ", platform='" + platform + '\'' +
+                    ", years='" + years + '\'' +
+                    ", pegi='" + pegi + '\'' +
+                    ", cost='" + cost + '\'' +
+                    ", etiqueta='" + etiqueta + '\'' +
+                    ", sales='" + sales + '\'' +
+                    '}';
+        }
+
+
     }
+
+
 
 
 

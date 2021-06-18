@@ -8,6 +8,6 @@ CREATE TABLE games (
                        pegi NUMERIC NOT NULL,
                        cost DECIMAL(5,2),
                        etiqueta VARCHAR(255) NOT NULL,
-                       sales NUMERIC(5,2)
+                       sales DECIMAL(5,2)
 
 );
