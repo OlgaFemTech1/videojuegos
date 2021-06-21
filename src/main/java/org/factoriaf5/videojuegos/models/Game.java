@@ -21,6 +21,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
         private double cost;
         private String etiqueta;
         private double sales;
+        private String photo;
 
         public Long getId() {
             return id;
@@ -98,10 +99,22 @@ import static javax.persistence.GenerationType.SEQUENCE;
                     ", cost='" + cost + '\'' +
                     ", etiqueta='" + etiqueta + '\'' +
                     ", sales='" + sales + '\'' +
+                    ", photo='" + photo + '\'' +
                     '}';
         }
 
 
+        public String getPhoto() {
+            return photo;
+        }
+
+        public void setPhoto(String photo) {
+            this.photo = photo;
+        }
+        public String getPhotoImagePath() {
+            if (photo == null || id == null) return null;
+            return "/game-photo/" + id + "/" + photo;
+        }
     }
 
 

@@ -10,6 +10,7 @@
         <div class="card-list">
             <div class="games" th:each="game: ${games}">
                 <img th:src="@{/img/logo.png}">
+                <img th:src="@{${game.photoImagePath}}" />
                 <div class="id" th:text="${game.id}"></div>
                 <div class="title" th:text="${game.title}"></div>
                 <div class="platform" th:text="${game.platform}"></div>
