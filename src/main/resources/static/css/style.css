@@ -51,7 +51,7 @@
 }
 .extra-info {
   display: none;
-  transition: 0.1s;
+  transition: 0.3s;
 
 }
 .games:hover .extra-info {
