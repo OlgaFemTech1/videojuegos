@@ -9,7 +9,7 @@
 
 }
 .title{
-  font-family: 'Syncopate', sans-serif, Regular 400;
+  font-family: 'Syncopate', sans-serif, Regular400;
   font-size: small ;
 }
 .games {
@@ -28,7 +28,7 @@
   display: block;
 }
 
-.buttonEditDelete {
+.buttonEdit {
   width: 12px;
   color: #f8f4f4;
   text-decoration: none;
@@ -50,6 +50,3 @@
   color:white;
 }
 
-.nav-item dropdown{
-  list-style: none;
-}
