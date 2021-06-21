@@ -49,4 +49,11 @@
   font-size: small;
   color:white;
 }
+.extra-info {
+  display: none;
+  transition: 0.1s;
 
+}
+.games:hover .extra-info {
+  display: block;
+}

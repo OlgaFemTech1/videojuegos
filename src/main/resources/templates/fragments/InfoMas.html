@@ -1,0 +1,24 @@
+
+<body>
+<div class="card-list">
+  <div class="games" th:each="game: ${games}">
+    <img th:src="@{/img/logo.png}">
+    <img th:src="@{${game.photoImagePath}}" />
+    <div class="title" th:text="${game.title}"></div>
+    <div class="platform" th:text="${game.platform}"></div>
+    <div class="cost" th:text="${game.cost}"></div>
+    <div class="etiqueta" th:text="${game.etiqueta}"></div>
+    <div class="sales" th:text="${game.sales}"></div>
+    <div class="id" th:text="${game.id}"></div>
+    <div class="years" th:text="${game.years}"></div>
+    <div class="pegi" th:text="${game.pegi}"></div>
+    <br>
+    <td>
+      <a class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
+    </td>
+    <td>
+      <a class="buttonDelete" th:href="'/games/delete/'+${game.id}">🗑</a>
+    </td>
+  </div>
+</div>
+</body>
