@@ -11,10 +11,12 @@
                 <img th:src="@{${game.photoImagePath}}" />
                 <div class="title" th:text="${game.title}"></div>
                 <div class="platform" th:text="${game.platform}"></div>
+              <div class="preciosAlaDerecha">
                 <div class="cost" th:text="${game.cost}"></div>
                 <div class="etiqueta" th:text="${game.etiqueta}"></div>
                 <div class="sales" th:text="${game.sales}"></div>
-              <div class="extra-info">
+              </div>
+                <div class="extra-info">
                   <div class="id" th:text="${game.id}"></div>
                 <div class="years" th:text="${game.years}"></div>
                 <div class="pegi" th:text="${game.pegi}"></div>

@@ -73,3 +73,8 @@ img{
 .games:hover .extra-info {
   display: block;
 }
+.preciosAlaDerecha{
+  justify-content: flex-end;
+  display: grid;
+
+}
