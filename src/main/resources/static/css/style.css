@@ -4,17 +4,25 @@
 
 
 .card-list {
+  height: 100px;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 10px;
   color: #363636;
 
 
 }
+<<<<<<< HEAD
 .navbar{
   background: rgb(255,140,0);
   background: linear-gradient(90deg, rgba(255,140,0,1) 0%, rgba(255,0,0,1) 100%);
   font-family: Staatliches;
+=======
+
+img{
+  border:none;
+
+>>>>>>> 055ee36054b109f62556b3db1a4e47cf9051ab12
 }
 .title{
   font-family: "Franklin Gothic Heavy";
