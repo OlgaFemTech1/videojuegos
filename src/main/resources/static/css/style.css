@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Syncopate&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Nunito:wght@200&family=Staatliches&family=Syncopate:wght@400;700&display=swap');
+
+
 
 .card-list {
   display: flex;
@@ -8,9 +11,14 @@
 
 
 }
+.navbar{
+  background: rgb(255,140,0);
+  background: linear-gradient(90deg, rgba(255,140,0,1) 0%, rgba(255,0,0,1) 100%);
+  font-family: Staatliches;
+}
 .title{
-  font-family: 'Syncopate', sans-serif, Regular400;
-  font-size: small ;
+  font-family: "Franklin Gothic Heavy";
+  font-size: large ;
 }
 .games {
   border: 1px solid black;
