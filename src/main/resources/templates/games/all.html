@@ -2,37 +2,37 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/head"></head>
 <body>
-    <header th:replace="fragments/header"></header>
-    <section class="container">
-      <h1 th:text="${title}"></h1>
-
-        <div class="card-list">
-            <div th:id="${game.id}" class="games" th:each="game: ${games}">
-                <img th:src="@{${game.photoImagePath}}" />
-                <div class="title" th:text="${game.title}"></div>
-                <div class="platform" th:text="${game.platform}"></div>
-              <div class="preciosAlaDerecha">
+<header th:replace="fragments/header"></header>
+<section class="container">
+    <div class="bloqueGameList">
+        <img class="imglogo" src="../img/logo.png">
+        <h1 class="h1clase" th:text="${title}"></h1>
+    </div>
+    <div class="card-list">
+        <div th:id="${game.id}" class="games" th:each="game: ${games}">
+            <img th:src="@{${game.photoImagePath}}"/>
+            <div class="title" th:text="${game.title}"></div>
+            <div class="platform" th:text="${game.platform}"></div>
+            <div class="preciosAlaDerecha">
                 <div class="cost" th:text="${game.cost}"></div>
                 <div class="etiqueta" th:text="${game.etiqueta}"></div>
                 <div class="sales" th:text="${game.sales}"></div>
-              </div>
-                <div class="extra-info">
-                  <div class="id" th:text="${game.id}"></div>
+            </div>
+            <div class="extra-info">
+                <div class="id" th:text="${game.id}"></div>
                 <div class="years" th:text="${game.years}"></div>
                 <div class="pegi" th:text="${game.pegi}"></div>
-              </div>
-                <br>
-                <td>
-                    <a class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
-                </td>
-                <td>
-                    <a class="buttonDelete" th:href="'/games/delete/'+${game.id}">🗑</a>
-                </td>
             </div>
+            <br>
+            <td>
+                <a class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
+            </td>
+            <td>
+                <a class="buttonDelete" th:href="'/games/delete/'+${game.id}">🗑</a>
+            </td>
         </div>
-    </section>
-
-
+    </div>
+</section>
 
 
 <footer th:replace="fragments/footer"></footer>

@@ -78,3 +78,17 @@ img{
   display: grid;
 
 }
+.bloqueGameList{
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: middle;
+
+  padding: 5px;
+}
+
+.imglogo {
+  width: 66px;
+}
+.h1clase{
+  margin-top: 1rem;
+}
