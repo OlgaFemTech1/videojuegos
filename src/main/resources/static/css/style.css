@@ -12,6 +12,10 @@
 
 
 }
+body{
+  background-color: #ffb600;
+}
+
 
 .navbar {
   background: rgb(255,140,0);
@@ -29,7 +33,6 @@ img{
   font-size: large ;
 }
 .games {
-  border: 1px solid black;
   width: 250px;
   border-radius: 10px;
   margin: 10px;
@@ -91,4 +94,5 @@ img{
 }
 .h1clase{
   margin-top: 1rem;
+  font-family: Electrolize;
 }
