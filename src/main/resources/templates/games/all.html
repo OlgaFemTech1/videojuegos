@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:replace="fragments/head"></head>
 <body>
 <header th:replace="fragments/header"></header>
 <section class="container">
     <div class="bloqueGameList">
-        <img class="imglogo" src="../img/logo.png">
+     <!--   <img class="imglogo" src="../img/logo.png">-->
         <h1 class="h1clase" th:text="${title}"></h1>
     </div>
     <div class="card-list">
@@ -25,10 +25,10 @@
             </div>
             <br>
             <td>
-                <a class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
+                <a sec:authorize= "isAuthenticated()" class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
             </td>
             <td>
-                <a class="buttonDelete" th:href="'/games/delete/'+${game.id}">🗑</a>
+                <a sec:authorize= "isAuthenticated()" class="buttonDelete" th:href="'/games/delete/'+${game.id}">🗑</a>
             </td>
         </div>
     </div>

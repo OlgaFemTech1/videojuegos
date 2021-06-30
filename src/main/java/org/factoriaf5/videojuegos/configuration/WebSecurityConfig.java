@@ -10,9 +10,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.authorizeRequests()
-      .antMatchers("/", "/data/**/**", "/games/", "/images/**", "/css/**", "/js/**", "/login").permitAll()
+      .antMatchers("/", "/data/**/**", "/games/", "/img/**", "/css/**", "/js/**", "/login").permitAll()
       .anyRequest().authenticated()
       .and().formLogin().permitAll()
       .and().logout().permitAll();
+    http.formLogin().defaultSuccessUrl("/", true);
+
   }
 }
