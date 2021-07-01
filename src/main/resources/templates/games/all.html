@@ -13,23 +13,31 @@
             <div class="title" th:text="${game.title}"></div>
             <div class="platform">Platform: <span class="game__text" th:text="${game.platform}"></span></div>
 
-          <div class="preciosAlaDerecha">
-                <div class="cost">Price: <span class="game__text"  th:text="${game.cost}"></span>€</div>
-                <div class="etiqueta">Discount: <span class="game__text" th:text="${game.etiqueta}"></span></div>
-                <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span>€</div>
+            <div class="preciosAlaDerecha">
+
+                <div class="cost">Price: <span class="game__text" th:text="${game.cost}"></span>€</div>
+                <!--    <div class="etiqueta" th:text="${game.etiqueta}"></div>
+                    <% if(etiqueta == null){%>
+                            <b>return null</b>
+                        <% } else { %>
+                            <b>return etiqueta</b>
+                        <% } %> -->
             </div>
+            <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span>€</div>
+
             <div class="extra-info">
                 <div class="id" th:text="${game.id}"></div>
                 <div class="years">Year: <span class="game__text" th:text="${game.years}"></span></div>
                 <div class="pegi">PEGI: <span class="game__text" th:text="${game.pegi}"></span></div>
-            <td>
-                <a sec:authorize= "isAuthenticated()" class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
-            </td>
-            <td>
-                <a sec:authorize= "isAuthenticated()" class="buttonDelete" th:href="'/games/delete/'+${game.id}">🗑</a>
-            </td>
+                <td>
+                    <a sec:authorize="isAuthenticated()" class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
+                </td>
+                <td>
+                    <a sec:authorize="isAuthenticated()" class="buttonDelete"
+                       th:href="'/games/delete/'+${game.id}">🗑</a>
+                </td>
+            </div>
         </div>
-    </div>
     </div>
 </section>
 

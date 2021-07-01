@@ -73,9 +73,7 @@ import static javax.persistence.GenerationType.IDENTITY;
             this.cost = cost;
         }
 
-        public String getEtiqueta() {
-            return etiqueta;
-        }
+        public String getEtiqueta() { return etiqueta; }
 
         public void setEtiqueta(String etiqueta) {
             this.etiqueta = etiqueta;
@@ -116,6 +114,16 @@ import static javax.persistence.GenerationType.IDENTITY;
             if (photo == null || id == null) return null;
             return "/game-photo/" + id + "/" + photo;
         }
+     /*   public String getEtiqueta()
+        {return etiqueta;
+        }
+        public void setEtiqueta(String etiqueta) {
+            this.etiqueta = etiqueta;
+        }
+        public String getEtiquetaPath(){
+                    if (etiqueta == null || id == null) return null;
+                    return "game-etiqueta/" + id + "/" + etiqueta;
+        } */
     }
 
 
