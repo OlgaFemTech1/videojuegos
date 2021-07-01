@@ -11,9 +11,9 @@
         <div th:id="${game.id}" class="games" th:each="game: ${games}">
             <img th:src="@{${game.photoImagePath}}"/>
             <div class="title" th:text="${game.title}"></div>
-           <!-- <div class="platform">Platform: <span class="game__text" th:text="${game.platform}"></span></div>-->
-            <p class="platform" >Platform: </p>
-            <p class="platform" th:text="${game.platform}"></p>
+            <div class="platform">Platform: <span class="game__text" th:text="${game.platform}"></span></div>
+            <!-- <p class="platform" >Platform: </p>
+            <p class="platform" th:text="${game.platform}"></p> -->
 
           <div class="preciosAlaDerecha">
                 <div class="cost">Price: <span class="game__text"  th:text="${game.cost}"></span></div>
@@ -23,16 +23,15 @@
             <div class="extra-info">
                 <div class="id" th:text="${game.id}"></div>
                 <div class="years">Year: <span class="game__text" th:text="${game.years}"></span></div>
-                <div class="pegi">PEGI: </div> <span class="game__text" th:text="${game.pegi}"></span></div>
-            </div>
-            <br>
+                <div class="pegi">PEGI: <span class="game__text" th:text="${game.pegi}"></span></div>
             <td>
-                <!--<a sec:authorize= "isAuthenticated()" class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
+                <a sec:authorize= "isAuthenticated()" class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
             </td>
             <td>
                 <a sec:authorize= "isAuthenticated()" class="buttonDelete" th:href="'/games/delete/'+${game.id}">🗑</a>
-            </td> -->
+            </td>
         </div>
+    </div>
     </div>
 </section>
 
