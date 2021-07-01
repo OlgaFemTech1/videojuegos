@@ -19,13 +19,24 @@
                 <div class="etiqueta" th:text="${game.etiqueta}">
                     <td>
                         <span th:if="${game.etiqueta == 'null'}">null</span>
-                        <span th:unless="${game.etiqueta == 'null'}" class="game__text" th:text="${game.etiqueta}"></span>
+                        <span th:unless="${game.etiqueta == 'null'}" class="game__text"
+                              th:text="${game.etiqueta}"></span>
                     </td>
                 </div>
 
             </div>
-            <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span>€</div>
+        <!--   <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span>€</div>-->
+            <td>
+                <span th:if="${game.etiqueta == 'null'}">null</span>
+                <span th:unless="${game.etiqueta == 'null'}">
+                     <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span>€</div></span>
+            </td>
 
+            <!-- problemas al ocultar sales" -->
+
+            <td>
+                <span th:if="${game.sales == '0.0'}">null</span>
+            </td>
             <div class="extra-info">
                 <div class="id" th:text="${game.id}"></div>
                 <div class="years">Year: <span class="game__text" th:text="${game.years}"></span></div>

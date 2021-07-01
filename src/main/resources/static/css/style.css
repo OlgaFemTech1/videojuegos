@@ -84,7 +84,6 @@ img{
 .preciosAlaDerecha{
   justify-content: flex-end;
   display: grid;
-
 }
 .bloqueGameList{
   display: flex;
