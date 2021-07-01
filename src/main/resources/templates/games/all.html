@@ -16,12 +16,13 @@
             <div class="preciosAlaDerecha">
 
                 <div class="cost">Price: <span class="game__text" th:text="${game.cost}"></span>€</div>
-                <!--    <div class="etiqueta" th:text="${game.etiqueta}"></div>
-                    <% if(etiqueta == null){%>
-                            <b>return null</b>
-                        <% } else { %>
-                            <b>return etiqueta</b>
-                        <% } %> -->
+                <div class="etiqueta" th:text="${game.etiqueta}">
+                    <td>
+                        <span th:if="${game.etiqueta == 'null'}">null</span>
+                        <span th:unless="${game.etiqueta == 'null'}" class="game__text" th:text="${game.etiqueta}"></span>
+                    </td>
+                </div>
+
             </div>
             <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span>€</div>
 
