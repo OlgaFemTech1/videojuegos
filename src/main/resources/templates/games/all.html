@@ -11,25 +11,27 @@
         <div th:id="${game.id}" class="games" th:each="game: ${games}">
             <img th:src="@{${game.photoImagePath}}"/>
             <div class="title" th:text="${game.title}"></div>
-            <div class="platform">Platform: <span class="game__text" th:text="${game.platform}">Mark</span></div>
+           <!-- <div class="platform">Platform: <span class="game__text" th:text="${game.platform}"></span></div>-->
+            <p class="platform" >Platform: </p>
+            <p class="platform" th:text="${game.platform}"></p>
 
           <div class="preciosAlaDerecha">
-                <div class="cost" th:text="${game.cost}"></div>
-                <div class="etiqueta" th:text="${game.etiqueta}"></div>
-                <div class="sales" th:text="${game.sales}"></div>
+                <div class="cost">Price: <span class="game__text"  th:text="${game.cost}"></span></div>
+                <div class="etiqueta">Discount: <span class="game__text" th:text="${game.etiqueta}"></span></div>
+                <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span></div>
             </div>
             <div class="extra-info">
                 <div class="id" th:text="${game.id}"></div>
-                <div class="years" th:text="${game.years}"></div>
-                <div class="pegi" th:text="${game.pegi}"></div>
+                <div class="years">Year: <span class="game__text" th:text="${game.years}"></span></div>
+                <div class="pegi">PEGI: </div> <span class="game__text" th:text="${game.pegi}"></span></div>
             </div>
             <br>
             <td>
-                <a sec:authorize= "isAuthenticated()" class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
+                <!--<a sec:authorize= "isAuthenticated()" class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
             </td>
             <td>
                 <a sec:authorize= "isAuthenticated()" class="buttonDelete" th:href="'/games/delete/'+${game.id}">🗑</a>
-            </td>
+            </td> -->
         </div>
     </div>
 </section>
