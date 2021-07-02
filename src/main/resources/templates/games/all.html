@@ -25,22 +25,19 @@
                 </div>
 
             </div>
-        <!--   <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span>€</div>-->
-            <td>
-                <span th:if="${game.etiqueta == 'null'}">null</span>
-                <span th:unless="${game.etiqueta == 'null'}">
-                     <div class="sales">End price: <span class="game__text" th:text="${game.sales}"></span>€</div></span>
-            </td>
+                <div class="sales"><mark>End price: <span class="game__text" th:text="${game.sales}"></span>€</mark></div>
 
-            <!-- problemas al ocultar sales" -->
 
-            <td>
-                <span th:if="${game.sales == '0.0'}">null</span>
-            </td>
+                <!--<td th:text="${game.sales == 1} ? 'ACTIVO' : 'BLOQUEADO'" /> -->
+
             <div class="extra-info">
-                <div class="id" th:text="${game.id}"></div>
-                <div class="years">Year: <span class="game__text" th:text="${game.years}"></span></div>
-                <div class="pegi">PEGI: <span class="game__text" th:text="${game.pegi}"></span></div>
+              <div class="id" hidden th:text="${game.id}"></div>
+
+                <!-- <td>
+                    <a sec:authorize="isAuthenticated()" class="games" th:id="${game.id}"></a>
+                </td>-->
+              <div class="years">Year: <span class="game__text" th:text="${game.years}"></span></div>
+              <div class="pegi">PEGI: <span class="game__text" th:text="${game.pegi}"></span></div>
                 <td>
                     <a sec:authorize="isAuthenticated()" class="buttonEdit" th:href="'/games/edit/'+${game.id}">🖊</a>
                 </td>

@@ -81,8 +81,17 @@ img{
 .games:hover .extra-info {
   display: block;
 }
+mark{
+  background-color: yellow;
+
+}
+
+.etiqueta{
+  color: red;
+  font-style: italic;
+}
 .preciosAlaDerecha{
-  justify-content: flex-end;
+  justify-content: flex-start;
   display: grid;
 }
 .bloqueGameList{
