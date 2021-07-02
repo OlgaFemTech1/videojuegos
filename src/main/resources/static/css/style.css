@@ -82,10 +82,13 @@ img{
   display: block;
 }
 mark{
-  background-color: yellow;
+  background-color: black;
+  color: #ffb600;
 
 }
-
+.cost {
+  text-decoration: line-through ;
+}
 .etiqueta{
   color: red;
   font-style: italic;
